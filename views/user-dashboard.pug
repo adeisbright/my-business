@@ -1,0 +1,28 @@
+include includes/ace-home-head.pug 
+block content 
+  body 
+    div.framer 
+      include includes/ace-home-nav.pug 
+      div.frame.justify-content-betwee 
+        div.fr-3  
+        div.fr-6  
+          if businesses.length > 0 
+            h2.center-text List of Businesses in myBusiness 
+            table.table.table-bordered
+              thead 
+                tr 
+                  th S/N 
+                  th Name 
+                  th Email 
+                  th Phone Contact  
+                  th Action 
+              tbody 
+                each business , i in businesses 
+                  - const {name , email , phoneNumber} = business
+                  tr 
+                    td #{i + 1} 
+                    td #{name} 
+                    td #{email} 
+                    td #{phoneNumber} 
+                    td #[a(href=`/businesses/${name}` class="button no-border no-outline bg-green white-text") View]
+          

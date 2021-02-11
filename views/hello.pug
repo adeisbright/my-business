@@ -1,0 +1,15 @@
+doctype html 
+html(lang="en") 
+  head 
+    meta(name="charset" content="utf-8") 
+    meta(name="viewport" content="width=device-width initial-scale=1.0")
+    title= title 
+    link(rel="stylesheet" href="/css/style.css") 
+  body 
+    h1 #{userName} 
+    if students.length > 0 
+      ul
+        each student , i in students 
+          li #{student.name} 
+    
+        

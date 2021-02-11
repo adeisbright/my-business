@@ -1,0 +1,21 @@
+include includes/ace-home-head.pug 
+block content 
+  body 
+    div.framer 
+      include includes/ace-home-nav.pug 
+      div.frame.justify-content-betwee 
+        div.fr-md-4 
+        div 
+          form(method="post") 
+            h2 Login to your accoount 
+            label(for="email") Email 
+            input(type="email" class="input input-border-faint pad-10" name="email") 
+            label(for="password") Password 
+            input(type="password" class="input input-border-faint pad-10" name="password") 
+            p Don't have an account ? #[a(href="/signup") Signup]
+            input(
+                type="submit" 
+                class="input input-border-faint pad-10 bg-green white-text shadow radius-5" 
+                name="submit" value="Sign in"
+            )  
+            p #[a(href="/password-reset") Forgot password  ?]
