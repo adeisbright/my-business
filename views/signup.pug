@@ -1,0 +1,48 @@
+include includes/ace-home-head.pug 
+block content 
+  body 
+    div.framer 
+      include includes/ace-home-nav.pug 
+      div.frame.justify-content-between 
+        div.center-text.fr-md-4
+          h2 Signup 
+          p.center-text Via 
+          div.frame.justify-content-between.m-b-2 
+            div 
+              a(href="#" class="button no-border bg-white") 
+                i.fa.fa-google 
+                p.center-text Google
+            div 
+               a(href="#" class="button no-border bg-white") 
+                i.fa.fa-facebook 
+                p facebook 
+            div 
+               a(href="#" class="button no-border bg-white") 
+                i.fa.fa-twitter  
+                p Twitter 
+          div.form 
+            form(class="" method="post") 
+              input(type="text" class="input input-border-faint pad-10 m-b-2" name="businessName" placeholder="Name(individual /organization)")
+              select(type="text" class="input input-border-faint pad-10 m-b-2" name="gender")
+                option(value=null) Gender 
+                option(value="M") Male 
+                option(value="F") Female 
+                option(value="O") Others  
+              input(type="email" class="input input-border-faint pad-10 m-b-2" name="email" placeholder="Email Address") 
+              input(type="tel" class="input input-border-faint pad-10 m-b-2" name="phoneNumber" placeholder="Phone") 
+              input(type="password" class="input input-border-faint pad-10 m-b-2" name="password" placeholder="Password")
+              input(type="password" class="input input-border-faint pad-10 m-b-2" name="confirmPassword" placeholder="Confirm Password") 
+              div.frame.justify-content-between 
+                div.fr-md-6 
+                  div.m-r-1
+                    input(type="text" class="input input-border-faint pad-10 m-b-2 " value="0TuyV6") 
+                div.fr-md-6 
+                  input(type="text" class="input input-border-faint pad-10 m-b-2" name="code" placeholder="Enter code here")
+              p Already have an account ? #[a(href="/login") Login]
+              div.frame.justify-content-between 
+                div.fr-md-6 
+                  div.m-r-1
+                    button(type="reset" class="button no-border no-outline shadow radius-5 bg-white border-sorround dark-text") Cancel 
+                div.fr-md-6 
+                  button(type="submit" class="button no-border no-outline shadow radius-5 bg-green white-text") Sign up 
+        div 

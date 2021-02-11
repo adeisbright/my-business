@@ -1,0 +1,60 @@
+{
+  "name": "mybusiness",
+  "version": "1.0.0",
+  "description": "A one-pack solution for business process automation and management. Designed and built for enterprise of varied format",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "devstart": "nodemon app.js",
+    "test": "jest"
+  },
+  "keywords": [
+    "B2B",
+    "B2P",
+    "P2B",
+    "A2A",
+    "Front-office",
+    "Back-office",
+    "management",
+    "Inventory",
+    "management",
+    "Customer",
+    "Relationship",
+    "Management",
+    "Messaging",
+    "Collaboration",
+    "Office",
+    "and",
+    "Team",
+    "Management"
+  ],
+  "author": "Adeleke Bright",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "connect-mongodb-session": "^2.4.1",
+    "cron": "^1.8.2",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "helmet": "^4.4.1",
+    "jsonwebtoken": "^8.5.1",
+    "logger": "0.0.1",
+    "mongodb": "^3.6.4",
+    "mongoose": "^5.11.15",
+    "passport": "^0.4.1",
+    "passport-facebook": "^3.0.0",
+    "passport-google-oauth": "^2.0.0",
+    "passport-twitter": "^1.0.4",
+    "pug": "^3.0.0",
+    "puppeteer": "^7.0.4",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "chai": "^4.3.0",
+    "chai-http": "^4.3.0",
+    "jest": "^26.6.3",
+    "mocha": "^8.2.1",
+    "nodemon": "^2.0.7"
+  }
+}

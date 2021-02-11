@@ -1,0 +1,19 @@
+include includes/ace-home-head.pug 
+block content 
+  body 
+    div.framer 
+      include includes/ace-home-nav.pug 
+    section#hero-header.bg-main.w-100 
+      div.framer 
+        div.frame.justify-content-between 
+          div.fr-md-6.white-text.pad-hero 
+            h2.m-b-2.hero-title Business Management Software for our organization 
+            p.m-b-2.hero-text Manage all your core business needs with a single solution 
+            a(href="/signup" class="dark-text bg-white shadow radius-5 button no-border") Try for free 
+          div.fr-md-6.pad-hero 
+            figure 
+              img(class="w-70" src="/images/employee.png" alt="Employee using our solution" title="My business in use")
+      main 
+        div.frame 
+          div 
+            
